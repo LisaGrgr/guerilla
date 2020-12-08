@@ -50,19 +50,35 @@ body {
 }
 
 #texte_droite {
-  padding:10px;
-  text-align:center;
   color: black;
   font-size: 2vw;
   font-family: "fraunces";
-  line-height: 110%;/*
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  text-align: center;
+  align-items: center;
+  height:100vh;
+  /*
+
   font-variation-settings: "SOFT" var(--SOFT),"WONK" var(--WONK);*/
 }
 
+#texte_droite ul {
+  display:block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+
 #texte_droite li {
   display:inline-block;
-  margin-right:1rem;
   cursor:pointer;
+  margin-right:0.5rem;
+  margin-left:0.5rem;
 }
 
 
