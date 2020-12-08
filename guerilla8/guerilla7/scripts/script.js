@@ -11,7 +11,6 @@ $(document).ready(function() {
 	let vert = 55+Math.floor(Math.random()*200);
 	let bleu = 55+Math.floor(Math.random()*200);
 	$("#container_droite").css("background-color", "rgb("+rouge+","+vert+","+bleu+")");
-	$(".overlay ul li a").css("color", "rgb("+rouge+","+vert+","+bleu+")");
 
 	// CORPS ALÉATOIRE
 	let corps = 18+Math.random()*100;
@@ -63,10 +62,15 @@ $(document).ready(function() {
 
 
 
-	// AJOUTER MOT À DROITE AU CLICK
+	// AJOUTER MOT À DROITE AU CLICK À GAUCHE
 	$("span").click(function() {
 		let mot = $(this).text();
 		$("#texte_droite > ul").append("<li>" + mot + "</li>");
+	});
+
+	// SUPPRIMER UN MOT AU CLICK À DROITE
+	$(document).on("click", "li", function() {
+		$(this).remove();
 	});
 
 	$("#texte_droite > ul").sortable();
