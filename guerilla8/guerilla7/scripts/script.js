@@ -70,9 +70,9 @@ $(document).ready(function() {
 	});
 
 	// SUPPRIMER UN MOT AU CLICK À DROITE
-	$(document).on("click", "li", function() {
-		$(this).remove();
-	});
+	//$(document).on("click", "li", function() {
+	//	$(this).remove();
+	//});
 
 	$("#texte_droite > ul").sortable();
 
