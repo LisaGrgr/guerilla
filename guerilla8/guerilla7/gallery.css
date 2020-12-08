@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "lucida";
+  src: url('fonts/Lucida_Console.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "fraunces";
+  src: url('fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2') format("woff2");
+}
+
+
+
+html,
+body {
+  height: 100%;
+  min-height: 18em;
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: black; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: #7a7a7a; 
+}
+
+
+::selection {
+  color: #fff;
+  background: #888;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #888;
+}
+
+
+/* galerie */ 
+
+
+
+.grille {
+  width: 100%;
+}
+
+.pic {
+  background-image: url('img/1.png');
+  float: left;
+  height: 38vh;
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+  background-size: contain;
+  
+}
+.pic:nth-child(4n+1) {
+  background-image: url('img/2.png');
+}
+.pic:nth-child(4n+3) {
+  background-image: url('img/3.png');
+}
+.pic:nth-child(4n+2) {
+  background-image: url('img/4.png');
+}
