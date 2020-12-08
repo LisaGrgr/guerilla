@@ -11,6 +11,7 @@ $(document).ready(function() {
 	let vert = 55+Math.floor(Math.random()*200);
 	let bleu = 55+Math.floor(Math.random()*200);
 	$("#container_droite").css("background-color", "rgb("+rouge+","+vert+","+bleu+")");
+	$('.overlay ul li a', ).css("color", "rgb("+rouge+","+vert+","+bleu+")");
 
 	// CORPS ALÉATOIRE
 	let corps = 18+Math.random()*100;
